@@ -17,4 +17,8 @@ export default class Age {
     this.findDaysOld();
     return Math.floor(this.daysOld / 365);
   }
+
+  findMercuryYears() {
+
+  }
 }

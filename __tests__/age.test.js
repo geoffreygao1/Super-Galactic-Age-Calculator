@@ -20,8 +20,12 @@ describe('Age', () => {
     expect(testAge.daysOld).toEqual(10377);
   });
 
-  test('should return the number of earth years old a person is', () => {
+  test('should return the number of Earth years old a person is', () => {
     expect(testAge.findEarthYears()).toEqual(28);
+  });
+
+  test('should return the number of Mercury years old a person is', () => {
+    expect(testAge.findMercuryYears()).toEqual(117);
   });
 
 });
