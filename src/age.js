@@ -6,8 +6,10 @@ export default class Age {
   }
 
   findDaysOld() {
-    // let birthday = new Date(this.birthday).getJulian();
-    // let todaysDate = new Date(this.todaysDate).getJulian();
-    // this.daysOld = todaysDate - birthday;
+    let birthday = new Date(this.birthday);
+    let todaysDate = new Date(this.todaysDate);
+    let timeDifference = todaysDate.getTime() - birthday.getTime();
+    let dayDifference = timeDifference / (1000 * 3600 * 24);
+    this.daysOld = dayDifference;
   }
 }
