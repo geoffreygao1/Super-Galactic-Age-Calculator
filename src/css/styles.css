@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  color: white;
+  background-image: url('../assets/images/space.jpg');
 }
 
 textarea {
@@ -7,7 +9,19 @@ textarea {
 }
 
 h1 {
-  margin: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: large;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
 }
 
 .container {
@@ -17,6 +31,9 @@ h1 {
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 25px;
+  padding: 20px;
 }
 
 #input {
@@ -27,5 +44,14 @@ h1 {
 #inputForm {
   padding: 30px;
   border-radius: 30px;
-  background-color: azure;
+  background-color: rgb(62, 61, 61);
+}
+
+.formfield {
+  margin-top: 20px;
+}
+
+textarea {
+  vertical-align: middle;
+  text-align: center;
 }

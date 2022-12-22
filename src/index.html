@@ -7,11 +7,13 @@
 
 <body>
   <div class="container">
-    <h1>Super Galactic Age Calculator</h1>
+    <div class="row justify-content-center">
+      <h1>Super Galactic Age Calculator</h1>
+    </div>
     <div id="input" class="row justify-content-center">
       <div id="inputForm" class="col-4 align-self-center">
         <form id='birthdayInput'>
-          <label for="birthday"> <strong><em>Your Birthday:</em></strong> </label>
+          <label for="birthday"> <strong><em>Your Birthday:</em></strong> </label><br>
           <input type="date" id="birthday" required="true">
           <div> <button type="submit" class="btn-primary">Convert Your Age</button></div>
         </form>
@@ -20,28 +22,43 @@
     <div class="row justify-content-center">
       <div id="mercuryDiv" class="col-2">
         <h3>Mercury</h3>
-        <label for="mercuryAge">Age:</label>
-        <textarea id="mercuryAge" cols="2" rows="1" readonly></textarea>
+        <img src="./assets/mercury.jpg" alt="Mercury">
+        <div class="formfield">
+          <label for="mercuryAge">Age:</label>
+          <textarea id="mercuryAge" cols="2" rows="1" readonly></textarea>
+        </div>
       </div>
       <div id="venusDiv" class="col-2">
         <h3>Venus</h3>
-        <label for="venusAge">Age:</label>
-        <textarea id="venusAge" cols="2" rows="1" readonly></textarea>
+        <img src="./assets/venus.png" alt="Venus">
+        <div class="formfield">
+          <label for="venusAge">Age:</label>
+          <textarea id="venusAge" cols="2" rows="1" readonly></textarea>
+        </div>
       </div>
       <div id="earthDiv" class="col-2">
         <h3>Earth</h3>
-        <label for="earthAge">Age:</label>
-        <textarea id="earthAge" cols="2" rows="1" readonly></textarea>
+        <img src="./assets/earth.jpg" alt="Earth">
+        <div class="formfield">
+          <label for="earthAge">Age:</label>
+          <textarea id="earthAge" cols="2" rows="1" readonly></textarea>
+        </div>
       </div>
       <div id="marsDiv" class="col-2">
         <h3>Mars</h3>
-        <label for="marsAge">Age:</label>
-        <textarea id="marsAge" cols="2" rows="1" readonly></textarea>
+        <img src="./assets/mars.png" alt="Mars">
+        <div class="formfield">
+          <label for="marsAge">Age:</label>
+          <textarea id="marsAge" cols="2" rows="1" readonly></textarea>
+        </div>
       </div>
       <div id="jupiterDiv" class="col-2">
         <h3>Jupiter</h3>
-        <label for="jupiterAge">Age:</label>
-        <textarea id="jupiterAge" cols="2" rows="1" readonly></textarea>
+        <img src="./assets/jupiter.jpg" alt="Jupiter">
+        <div class="formfield">
+          <label for="jupiterAge">Age:</label>
+          <textarea id="jupiterAge" cols="2" rows="1" readonly></textarea>
+        </div>
       </div>
     </div>
   </div>
