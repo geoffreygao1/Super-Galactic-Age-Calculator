@@ -12,4 +12,8 @@ export default class Age {
     let dayDifference = timeDifference / (1000 * 3600 * 24);
     this.daysOld = dayDifference;
   }
+
+  findEarthYears() {
+
+  }
 }
