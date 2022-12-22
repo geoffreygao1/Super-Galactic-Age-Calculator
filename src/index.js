@@ -18,3 +18,17 @@ function convertAgeHandler(event) {
   age.findDaysOld();
   populateAges(age);
 }
+
+function populateAges(age) {
+  let mercuryInput = document.getElementById("mercuryAge");
+  let venusInput = document.getElementById("venusAge");
+  let earthInput = document.getElementById("earthAge");
+  let marsInput = document.getElementById("marsAge");
+  let jupiterInput = document.getElementById("jupiterAge");
+
+  mercuryInput.value = age.findEquivalentYears('Mercury');
+  venusInput.value = age.findEquivalentYears('Venus');
+  earthInput.value = age.findEquivalentYears('Earth');
+  marsInput.value = age.findEquivalentYears('Mars');
+  jupiterInput.value = age.findEquivalentYears('Jupiter');
+}
