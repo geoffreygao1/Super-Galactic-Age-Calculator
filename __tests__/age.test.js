@@ -7,7 +7,9 @@ describe('Age', () => {
     testAge = new Age();
   });
 
-  test('should create an Age object with a birthday property', () => {
+  test('should create an Age object with a birthday property and a daysOld property', () => {
     expect(testAge.birthday).toEqual('');
+    expect(testAge.daysOld).toEqual(0);
   });
+
 });
