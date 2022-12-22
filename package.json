@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/geoffreygao1/Super-Galactic-Age-Calculator#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "eslint": "^8.18.0",
