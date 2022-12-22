@@ -7,9 +7,16 @@ describe('Age', () => {
     testAge = new Age();
   });
 
-  test('should create an Age object with a birthday property and a daysOld property', () => {
+  test('should create an Age object with a 3 properties: birthday, todays date, and a daysOld property', () => {
     expect(testAge.birthday).toEqual('');
+    expect(testAge.todaysDate).toEqual('');
     expect(testAge.daysOld).toEqual(0);
   });
+
+  // test('should calculate the number of days old a person is based on their birthday', () => {
+  //   testAge.birthday = "1994-07-25";
+  //   testAge.findDaysOld();
+
+  // })
 
 });
