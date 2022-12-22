@@ -13,6 +13,11 @@ h1 {
   font-weight: bold;
 }
 
+input {
+  width: 160px;
+  margin: 10px;
+}
+
 h3 {
   font-size: large;
 }
