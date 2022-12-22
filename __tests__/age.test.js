@@ -20,7 +20,7 @@ describe('Age', () => {
     expect(testAge.daysOld).toEqual(10377);
   });
 
-  test('should return the number of years old a person is based on the chosen planet', () => {
+  test('should return the whole number of years old a person is based on the chosen planet', () => {
     testAge.findDaysOld();
     expect(testAge.findEquivalentYears('Mercury')).toEqual(117);
     expect(testAge.findEquivalentYears('Venus')).toEqual(46);
@@ -29,7 +29,7 @@ describe('Age', () => {
     expect(testAge.findEquivalentYears('Jupiter')).toEqual(2);
   });
 
-  test('should calculate the number of years old a person is from an input age and planet', () => {
+  test('should calculate the whole number of years old a person is from an input age and planet', () => {
     testAge.findDaysOld();
     expect(testAge.findYearsOldSince(15, 'Earth')).toEqual(13);
     expect(testAge.findYearsOldSince(15, 'Mercury')).toEqual(55);
@@ -38,13 +38,13 @@ describe('Age', () => {
     expect(testAge.findYearsOldSince(15, 'Jupiter')).toEqual(1);
   });
 
-  test('should calculate the number of years there is until an input age and planet', () => {
+  test('should calculate the whole number of years there is until an input age and planet', () => {
     testAge.findDaysOld();
-    expect(testAge.findYearsUntil(41, 'Earth')).toEqual(13);
-    expect(testAge.findYearsUntil(41, 'Mercury')).toEqual(55);
-    expect(testAge.findYearsUntil(41, 'Venus')).toEqual(21);
-    expect(testAge.findYearsUntil(41, 'Mars')).toEqual(7);
-    expect(testAge.findYearsUntil(41, 'Jupiter')).toEqual(1);
+    expect(testAge.findYearsUntil(33, 'Earth')).toEqual(4);
+    expect(testAge.findYearsUntil(33, 'Mercury')).toEqual(19);
+    expect(testAge.findYearsUntil(33, 'Venus')).toEqual(7);
+    expect(testAge.findYearsUntil(33, 'Mars')).toEqual(2);
+    expect(testAge.findYearsUntil(33, 'Jupiter')).toEqual(0);
   });
 
 });

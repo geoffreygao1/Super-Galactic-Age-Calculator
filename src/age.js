@@ -40,6 +40,15 @@ export default class Age {
   }
 
   findYearsUntil(newAge, planet) {
-
+    let birthday = new Date(this.birthday);
+    var year = birthday.getFullYear();
+    var month = birthday.getMonth();
+    var day = birthday.getDate();
+    let newBirthday = new Date(year + newAge, month, day);
+    let todaysDate = new Date(this.todaysDate);
+    let timeDifference = newBirthday.getTime() - todaysDate.getTime();
+    let dayDifference = timeDifference / (1000 * 3600 * 24);
+    this.daysOld = dayDifference;
+    return this.findEquivalentYears(planet);
   }
 }
