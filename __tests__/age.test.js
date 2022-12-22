@@ -38,4 +38,13 @@ describe('Age', () => {
     expect(testAge.findYearsOldSince(15, 'Jupiter')).toEqual(1);
   });
 
+  test('should calculate the number of years there is until an input age and planet', () => {
+    testAge.findDaysOld();
+    expect(testAge.findYearsUntil(41, 'Earth')).toEqual(13);
+    expect(testAge.findYearsUntil(41, 'Mercury')).toEqual(55);
+    expect(testAge.findYearsUntil(41, 'Venus')).toEqual(21);
+    expect(testAge.findYearsUntil(41, 'Mars')).toEqual(7);
+    expect(testAge.findYearsUntil(41, 'Jupiter')).toEqual(1);
+  });
+
 });
