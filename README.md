@@ -19,10 +19,6 @@
 
 _This website contains a short form that accept's a user's birthday date, and outputs the user's age on different planets. The project demonstrates solid understanding of the new concepts from the Test Driven Development course including for test driven development with Jest, ES6 Classes, NPM, and Webpack._
 
-## Github Pages Link
-
-[Click here](https://geoffreygao1.github.io/Super-Galactic-Age-Calculator) to view the Github Pages website
-
 ## Setup/Installation Requirements
 
 * _Clone this repository to your desktop_
