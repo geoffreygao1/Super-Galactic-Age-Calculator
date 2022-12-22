@@ -49,7 +49,7 @@ describe('Age', () => {
 
   test('should return the number of days until the users next birthday on an input planet', () => {
     testAge.findDaysOld();
-    expect(testAge.daysUntilBday('Earth')).toEqual(50);
+    expect(testAge.daysUntilBday('Earth')).toEqual(215);
   })
 
 });

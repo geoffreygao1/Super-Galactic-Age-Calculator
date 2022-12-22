@@ -53,6 +53,13 @@ export default class Age {
   }
 
   daysUntilBday(planet) {
-
+    const yearsKey = {
+      Mercury: 87.97,
+      Venus: 224.7,
+      Earth: 365.26,
+      Mars: 687,
+      Jupiter: 4331.98
+    };
+    return Math.floor(yearsKey[planet] - (this.daysOld % yearsKey[planet]));
   }
 }
