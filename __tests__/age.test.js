@@ -13,10 +13,11 @@ describe('Age', () => {
     expect(testAge.daysOld).toEqual(0);
   });
 
-  // test('should calculate the number of days old a person is based on their birthday', () => {
-  //   testAge.birthday = "1994-07-25";
-  //   testAge.findDaysOld();
-
-  // })
+  test('should calculate the number of days old a person is based on their birthday', () => {
+    testAge.birthday = "1994-07-25";
+    testAge.todaysDate = "2022-12-22"
+    testAge.findDaysOld();
+    expect(testAge.daysOld).toEqual(10377);
+  })
 
 });
