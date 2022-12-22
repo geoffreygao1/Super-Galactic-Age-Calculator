@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  margin: 30px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#input {
+  margin: 30px;
+
+}
+
+#inputForm {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: azure;
+}

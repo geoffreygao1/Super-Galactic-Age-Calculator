@@ -6,35 +6,43 @@
 </head>
 
 <body>
-  <h1>Super Galactic Age Calculator</h1>
-  <div>
-    <form id='birthdayInput'>
-      <label for="birthday">Your Birthday:</label>
-      <input type="date" id="birthday" required="true">
-      <button type="submit">Convert Your Age</button>
-    </form>
-  </div>
-  <h2>Your Age on:</h2>
-  <div class="row">
-    <div id="mercuryDiv" class="col-2">
-      <label for="mercuryAge">Mercury:</label>
-      <textarea id="mercuryAge" cols="2" rows="1" readonly></textarea>
+  <div class="container">
+    <h1>Super Galactic Age Calculator</h1>
+    <div id="input" class="row justify-content-center">
+      <div id="inputForm" class="col-4 align-self-center">
+        <form id='birthdayInput'>
+          <label for="birthday"> <strong><em>Your Birthday:</em></strong> </label>
+          <input type="date" id="birthday" required="true">
+          <div> <button type="submit" class="btn-primary">Convert Your Age</button></div>
+        </form>
+      </div>
     </div>
-    <div id="venusDiv" class="col-2">
-      <label for="venusAge">Venus:</label>
-      <textarea id="venusAge" cols="2" rows="1" readonly></textarea>
-    </div>
-    <div id="earthDiv" class="col-2">
-      <label for="earthAge">Earth:</label>
-      <textarea id="earthAge" cols="2" rows="1" readonly></textarea>
-    </div>
-    <div id="marsDiv" class="col-2">
-      <label for="marsAge">Mars:</label>
-      <textarea id="marsAge" cols="2" rows="1" readonly></textarea>
-    </div>
-    <div id="jupiterDiv" class="col-2">
-      <label for="jupiterAge">Jupiter:</label>
-      <textarea id="jupiterAge" cols="2" rows="1" readonly></textarea>
+    <div class="row justify-content-center">
+      <div id="mercuryDiv" class="col-2">
+        <h3>Mercury</h3>
+        <label for="mercuryAge">Age:</label>
+        <textarea id="mercuryAge" cols="2" rows="1" readonly></textarea>
+      </div>
+      <div id="venusDiv" class="col-2">
+        <h3>Venus</h3>
+        <label for="venusAge">Age:</label>
+        <textarea id="venusAge" cols="2" rows="1" readonly></textarea>
+      </div>
+      <div id="earthDiv" class="col-2">
+        <h3>Earth</h3>
+        <label for="earthAge">Age:</label>
+        <textarea id="earthAge" cols="2" rows="1" readonly></textarea>
+      </div>
+      <div id="marsDiv" class="col-2">
+        <h3>Mars</h3>
+        <label for="marsAge">Age:</label>
+        <textarea id="marsAge" cols="2" rows="1" readonly></textarea>
+      </div>
+      <div id="jupiterDiv" class="col-2">
+        <h3>Jupiter</h3>
+        <label for="jupiterAge">Age:</label>
+        <textarea id="jupiterAge" cols="2" rows="1" readonly></textarea>
+      </div>
     </div>
   </div>
 </body>
