@@ -62,4 +62,8 @@ export default class Age {
     };
     return Math.floor(yearsKey[planet] - (this.daysOld % yearsKey[planet]));
   }
+
+  daysSinceBday(planet) {
+
+  }
 }
