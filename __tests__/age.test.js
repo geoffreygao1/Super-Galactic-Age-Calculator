@@ -20,12 +20,12 @@ describe('Age', () => {
     expect(testAge.daysOld).toEqual(10377);
   });
 
-  test('should return the number of Earth years old a person is', () => {
-    expect(testAge.findEarthYears()).toEqual(28);
-  });
-
-  test('should return the number of Mercury years old a person is', () => {
-    expect(testAge.findMercuryYears()).toEqual(117);
+  test('should return the number of years old a person is based on the chosen planet', () => {
+    expect(testAge.findEquivalentYears('Mercury')).toEqual(117);
+    expect(testAge.findEquivalentYears('Venus')).toEqual(46);
+    expect(testAge.findEquivalentYears('Earth')).toEqual(28);
+    expect(testAge.findEquivalentYears('Mars')).toEqual(15);
+    expect(testAge.findEquivalentYears('Jupiter')).toEqual(2);
   });
 
 });

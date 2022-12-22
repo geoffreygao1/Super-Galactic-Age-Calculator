@@ -13,13 +13,15 @@ export default class Age {
     this.daysOld = dayDifference;
   }
 
-  findEarthYears() {
+  findEquivalentYears(planet) {
+    const yearsKey = {
+      Mercury: 88,
+      Venus: 225,
+      Earth: 365,
+      Mars: 687,
+      Jupiter: 4333
+    };
     this.findDaysOld();
-    return Math.floor(this.daysOld / 365);
-  }
-
-  findMercuryYears() {
-    this.findDaysOld();
-    return Math.floor(this.daysOld / 88);
+    return Math.floor(this.daysOld / yearsKey[planet]);
   }
 }
