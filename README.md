@@ -17,7 +17,7 @@
 
 ## Description
 
-_This website contains a short form that accept's a user's birthday date, and outputs the user's age on differen tplanets. The project demonstrates solid understanding of the new concepts from the Test Driven Development course including for test driven development with Jest, ES6 Classes, NPM, and Webpack._
+_This website contains a short form that accept's a user's birthday date, and outputs the user's age on different planets. The project demonstrates solid understanding of the new concepts from the Test Driven Development course including for test driven development with Jest, ES6 Classes, NPM, and Webpack._
 
 ## Github Pages Link
 
