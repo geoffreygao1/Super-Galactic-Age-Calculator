@@ -14,6 +14,7 @@ export default class Age {
   }
 
   findEarthYears() {
-
+    this.findDaysOld();
+    return Math.floor(this.daysOld / 365);
   }
 }
