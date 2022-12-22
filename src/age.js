@@ -51,4 +51,8 @@ export default class Age {
     this.daysOld = dayDifference;
     return this.findEquivalentYears(planet);
   }
+
+  daysUntilBday(planet) {
+
+  }
 }
